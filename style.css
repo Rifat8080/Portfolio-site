@@ -194,7 +194,7 @@ button {
 .box-img > img {
   overflow: hidden;
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 7px;
   width: 100%;
   min-height: 220px;
   object-fit: cover;
@@ -206,7 +206,6 @@ button {
   display: flex;
   justify-content: center;
   color: var(--color-primary);
-  padding: 0.5em 0.75em;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
