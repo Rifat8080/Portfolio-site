@@ -159,6 +159,7 @@ button {
   overflow: hidden;
   box-sizing: border-box;
 }
+
 .box-img img {
   width: 100%;
   min-height: 250px;
@@ -205,12 +206,6 @@ button {
   border-radius: 16px;
 }
 
-.box-img > img {
-  width: 100%;
-  min-height: 220px;
-  object-fit: cover;
-}
-
 .box-title {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -219,14 +214,18 @@ button {
   color: #172b4d;
   text-align: left;
 }
+
+.box-img > img {
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
 .box-tags {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-}
-
-.box-tags {
   color: var(--color-primary);
   padding: 0.5em 0.75em 0.5em;
   font-family: Inter, sans-serif;
@@ -241,10 +240,6 @@ button {
 .btn-showup {
   display: flex;
   justify-content: space-between;
-}
-
-.btn-showup {
-  display: flex;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   border: none;
@@ -288,7 +283,7 @@ button {
   background: var(--color-primary);
   font-weight: 500;
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
