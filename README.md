@@ -46,15 +46,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/Rifat8080/Portfolio-site)
+- [Live Demo Link] Coming soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -76,8 +74,6 @@ git clone https://github.com/Rifat8080/Portfolio-site
 
 ### Install
 
-Install this project with:
-
 ### Usage
 
 ### Run tests
@@ -90,8 +86,6 @@ Install this project with:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author**
 
 - GitHub: [@Rifat8080](https://github.com/Rifat8080)
@@ -103,8 +97,6 @@ Install this project with:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Home will be added]**
 - [ ] **[Images will be added]**
