@@ -262,8 +262,8 @@ button {
 
 .about-myself {
   margin-top: 2rem;
-  background: url(Imgs/illustration_1-about_me-mobile.svg) no-repeat 100% 0%,
-    url(Imgs/illustration_2-about_me_mobile.svg) no-repeat 0 300px;
+  background: url(Imgs/illustration_1-about_me-mobile.svg) no-repeat 100% 0%;
+  background: url(Imgs/illustration_2-about_me_mobile.svg) no-repeat 0 300px;
   text-align: center;
   padding: 2em;
 }
