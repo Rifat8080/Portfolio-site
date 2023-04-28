@@ -106,3 +106,246 @@ button {
     display: none;
   }
 }
+
+/* class box-job, box-img, box-title, box-tags, btn-showup  */
+
+/* Styling My recent work section */
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px repeat(auto, 6fr);
+  text-align: center;
+  width: 90%;
+  margin: 80px auto;
+  border-radius: 15px;
+}
+
+.jobs h1:first-child {
+  padding: 1em;
+}
+
+.jobs h1:first-child::after {
+  content: "";
+  height: 4px;
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20px;
+  z-index: -1;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+}
+
+.box-job {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 1em auto;
+  width: 330px;
+  height: 480px;
+  background: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+}
+
+.box-job:hover {
+  box-shadow: var(--shadow);
+}
+
+.box-img {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.box-img img {
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.box-tags,
+.skill-tags {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-tags li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  color: #3a4a42;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75em;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.box-job > .box-tags > li {
+  background: #ebf0ee;
+  font-size: 12px;
+  padding: 0.5em;
+  margin: 0 0.5em;
+  border-radius: 4px;
+}
+
+.box-title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #172b4d;
+  text-align: left;
+}
+
+.box-img > img {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.btn-showup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
+}
+
+.btn-showup:hover {
+  background: #36b37f;
+  box-shadow: 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.btn-showup:active {
+  background: #008552;
+  border-radius: 4px;
+}
+
+.btn-showup > img {
+  margin-left: 1.3em;
+}
+
+/* About me section styling */
+
+.about-myself {
+  margin-top: 2rem;
+  background: url(Imgs/illustration_1-about_me-mobile.svg) no-repeat 100% 0%;
+  background: url(Imgs/illustration_2-about_me_mobile.svg) no-repeat 0 300px;
+  text-align: center;
+  padding: 2em;
+}
+
+.about-myself p {
+  font-size: 20px;
+  color: #172b4d;
+}
+
+.getrbtn button {
+  display: flex;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
+}
+
+.getrbtn button:hover {
+  background: #36b37f;
+  box-shadow: 16px 25px rgba(54, 179, 127, 0.24);
+  border-radius: 3px;
+}
+
+.getrbtn button:active {
+  background: #008552;
+  border-radius: 3px;
+}
+
+.myself-skillset {
+  list-style: none;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.skill-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 0 0 0;
+  margin-bottom: 2em;
+  height: 352px;
+  width: 327px;
+  background: #ebf0ee;
+  border: 1px lightgrey solid;
+  border-radius: 5px;
+  transition: box-shadow 0.4s ease-out;
+}
+
+.skill-categories:hover {
+  box-shadow: var(--shadow);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.skill-categories > .skill-tags > li {
+  background: white;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 1em 0.5em;
+  margin: 1em 0.5em;
+  border-radius: 5px;
+}
+
+.skill-title {
+  font-size: 24px;
+  color: #172b4d;
+}
+
+.skill-img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
