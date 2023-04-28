@@ -116,7 +116,8 @@ button {
   grid-template-rows: 200px repeat(auto, 6fr);
   text-align: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 80px auto;
+  border-radius: 15px;
 }
 
 .jobs h1:first-child {
@@ -146,9 +147,10 @@ button {
   margin: 1em auto;
   width: 330px;
   height: 480px;
-  border: 1px #d0d9d4;
-  border-radius: 8 px;
+  background: #ffffff;
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
 }
 
 .box-job:hover {
@@ -194,25 +196,27 @@ button {
 .box-img > img {
   overflow: hidden;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 8px;
   width: 100%;
   min-height: 220px;
   object-fit: cover;
 }
 
-.box-tags {
-  list-style: none;
-  padding: 0;
+.box-tags li {
   display: flex;
-  justify-content: center;
-  color: var(--color-primary);
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  color: #3a4a42;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.75em;
   line-height: 1em;
   letter-spacing: 0.03em;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .btn-showup {
@@ -230,6 +234,17 @@ button {
   padding: 1em 1.5em;
   color: white;
   border-radius: 3px;
+}
+
+.btn-showup:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.btn-showup:active {
+  background: #008552;
+  border-radius: 4px;
 }
 
 .btn-showup > img {
@@ -265,6 +280,17 @@ button {
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
+  border-radius: 3px;
+}
+
+.getrbtn button:hover {
+  background: #36b37f;
+  box-shadow: 0px 16px 25px rgba(54, 179, 127, 0.24);
+  border-radius: 3px;
+}
+
+.getrbtn button:active {
+  background: #008552;
   border-radius: 3px;
 }
 
