@@ -177,9 +177,8 @@ button {
 }
 
 .box-tags li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  float: left;
+  margin: 3% 3%;
   list-style: none;
   padding: 8px 12px;
   background: #ebf0ee;
