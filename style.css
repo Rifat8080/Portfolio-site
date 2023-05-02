@@ -349,3 +349,38 @@ button {
   justify-content: center;
   align-self: center;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url(imgs/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 90%; 
+}
+
+form {
+  margin-top: 2em;
+}
+
+.foot-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  list-style-type: none;
+  padding: 0%;
+  gap: 12px;
+}
