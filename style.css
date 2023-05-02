@@ -283,10 +283,32 @@ button {
   border-radius: 3px;
 }
 
+.submit-button button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.submit-button button:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+  border-radius: 3px;
+}
+
+.submit-button button:active {
+  background: #008552;
+  border-radius: 3px;
+}
+
 .getrbtn button:hover {
   background: #36b37f;
-  box-shadow: 16px 25px rgba(54, 179, 127, 0.24);
   border-radius: 3px;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .getrbtn button:active {
@@ -348,4 +370,109 @@ button {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url(imgs/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+}
+
+form {
+  margin-top: 2em;
+}
+
+.foot-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  list-style-type: none;
+  padding: 0%;
+}
+
+.input-name {
+  display: block;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-email {
+  color: #42526e;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.input-email {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+}
+
+input,
+textarea {
+  width: 327px;
+  padding: 1em;
+  margin: 1em 0;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #6b778c;
+}
+
+textarea {
+  border-color: #60c095;
+  color: #42526e;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+input:valid,
+textarea:valid {
+  border: 1px solid #60c095;
+  background: #fff;
+}
+
+footer::after {
+  content: "";
+  height: 4px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+  background: #172b4d;
+  border-radius: 8px;
+}
+
+.footer-socialmedia .social-media {
+  margin-top: 9%;
+  margin-bottom: 0;
+  padding-bottom: 2%;
 }
