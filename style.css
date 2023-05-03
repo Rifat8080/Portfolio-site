@@ -526,9 +526,10 @@ footer::after {
     line-height: 4rem;
   }
 
-  .menu-item a {
+  .menu-list .menu-item a {
     color: #42526e;
   }
+
   .heading {
     padding-top: 3em;
   }
@@ -550,13 +551,12 @@ footer::after {
     display: flex;
     justify-content: center;
     margin-top: -15%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
     line-height: 60px;
     text-align: center;
-
     letter-spacing: 0.37px;
     flex: none;
     order: 0;
@@ -566,7 +566,7 @@ footer::after {
   .first-section p {
     width: 85%;
     margin-bottom: 10%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
