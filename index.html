@@ -9,16 +9,39 @@
   </head>
   <body>
     <header>
-      <nav class="header-nav-mobile">
+      <div class="header-nav-mobile">
         <a href="/" class="logo">
           <h3>MHR</h3>
         </a>
         <button type="button" class="menu-bar">
           <img src="Imgs/Icon - Menu.svg" alt="" />
         </button>
-      </nav>
+        <nav class="header-nav-mobile hidden">
+          <button type="button" class="btn-close-nav">
+            <img src="Imgs/Icon-Cancel.svg" alt="cancel icon" />
+          </button>
+          <ul>
+            <li>
+              <a href="#works-id" class="link-portfolio"> Portfolio </a>
+            </li>
+            <li>
+              <a href="#about-myself-id" class="link-about"> About </a>
+            </li>
+            <li>
+              <a href="#footer-container-id" class="link-contact"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="first-section">
+      <nav>
+        <ul class="header-nav-desktop">
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <div class="flex-container">
         <h1 class="heading">Hey there. I'm Rifat.</h1>
         <h1>
@@ -62,6 +85,10 @@
             </a>
           </li>
         </ul>
+
+        <button type="button">
+          <img src="Imgs/Disabled.svg" alt="disabled button" />
+        </button>
       </div>
     </section>
 
@@ -269,37 +296,40 @@
         >mahadihasanrifat86@gmail.com</a
       >
       <div class="footer-socialmedia">
-      <ul class="social-media">
-        <li>
-          <a href="">
-            <img src="Imgs/Social-media/twitter.svg" alt="twitter symbol" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img
-              src="Imgs/Social-media/Linkedin icon.svg"
-              alt="linkedin symbol"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="Imgs/Social-media/medium.svg" alt="medium symbol" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="Imgs/Social-media/github.svg" alt="github symbol" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="Imgs/Social-media/angellist.svg" alt="angellist symbol" />
-          </a>
-        </li>
-      </ul>
-    </div>
+        <ul class="social-media">
+          <li>
+            <a href="">
+              <img src="Imgs/Social-media/twitter.svg" alt="twitter symbol" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="Imgs/Social-media/Linkedin icon.svg"
+                alt="linkedin symbol"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="Imgs/Social-media/medium.svg" alt="medium symbol" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="Imgs/Social-media/github.svg" alt="github symbol" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="Imgs/Social-media/angellist.svg"
+                alt="angellist symbol"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
