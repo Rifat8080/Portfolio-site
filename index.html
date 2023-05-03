@@ -16,32 +16,36 @@
         <button type="button" class="menu-bar">
           <img src="Imgs/Icon - Menu.svg" alt="" />
         </button>
-        <nav class="header-nav-mobile hidden">
-          <button type="button" class="btn-close-nav">
+        <nav class="header-nav-mobile-hidden">
+          <button type="button" class="menu-bar-close">
             <img src="Imgs/Icon-Cancel.svg" alt="cancel icon" />
           </button>
-          <ul>
-            <li>
-              <a href="#works-id" class="link-portfolio"> Portfolio </a>
-            </li>
-            <li>
-              <a href="#about-myself-id" class="link-about"> About </a>
-            </li>
-            <li>
-              <a href="#footer-container-id" class="link-contact"> Contact </a>
-            </li>
-          </ul>
+          <div class="header-nav-desktop">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#jobs-id" class="link-portfolio"> Portfolio </a>
+              </li>
+              <li class="menu-item">
+                <a href="#about-myself-id" class="link-about"> About </a>
+              </li>
+              <li class="menu-item">
+                <a href="#footer-container-id" class="link-contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
     <section class="first-section">
-      <nav>
+      <!-- <nav>
         <ul class="header-nav-desktop">
           <li>Portfolio</li>
           <li>About</li>
           <li>Contact</li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="flex-container">
         <h1 class="heading">Hey there. I'm Rifat.</h1>
         <h1>
@@ -85,18 +89,22 @@
             </a>
           </li>
         </ul>
-
-        <button type="button">
-          <img src="Imgs/Disabled.svg" alt="disabled button" />
-        </button>
+        <div class="disabled-button">
+          <button type="button">
+            <img src="Imgs/Disabled.svg" alt="disabled button" />
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- My recent Works Section -->
 
     <section>
-      <div class="jobs" id="jobs-id">
+      <div class="recent-job">
         <h1>My Recent Works</h1>
+      </div>
+      <div class="main-jobs">
+      <div class="jobs" id="jobs-id">
         <article class="box-job">
           <div class="box-img">
             <img src="Imgs/Recent works/1.jpg" alt="" />
@@ -125,6 +133,8 @@
           </ul>
           <button type="button" class="btn-showup">See Project</button>
         </article>
+        </div>
+        <div class="jobs" id="jobs-id">
         <article class="box-job">
           <div class="box-img">
             <img src="Imgs/Recent works/3.jpg" alt="" />
@@ -138,6 +148,8 @@
           </ul>
           <button type="button" class="btn-showup">See Project</button>
         </article>
+        </div>
+        <div class="jobs" id="jobs-id">
         <article class="box-job">
           <div class="box-img">
             <img src="Imgs/Recent works/4.jpg" alt="" />
@@ -151,6 +163,8 @@
           </ul>
           <button type="button" class="btn-showup">See Project</button>
         </article>
+        </div>
+        <div class="jobs" id="jobs-id">
         <article class="box-job">
           <div class="box-img">
             <img src="Imgs/Recent works/5.jpg" alt="" />
@@ -164,6 +178,8 @@
           </ul>
           <button type="button" class="btn-showup">See Project</button>
         </article>
+        </div>
+        <div class="jobs" id="jobs-id">
         <article class="box-job">
           <div class="box-img">
             <img src="Imgs/Recent works/6.jpg" alt="" />
@@ -177,6 +193,8 @@
           </ul>
           <button type="button" class="btn-showup">See Project</button>
         </article>
+        </div>
+        </div>
       </div>
     </section>
 
@@ -195,7 +213,7 @@
         <button type="button">Get My Resume</button>
       </div>
       <ul class="myself-skillset">
-        <li>
+        <li class="skill-cards">
           <article class="skill-categories">
             <div class="skill-img">
               <img src="Imgs/icon-languages.svg" alt="" />
@@ -209,7 +227,7 @@
             </ul>
           </article>
         </li>
-        <li>
+        <li class="skill-cards">
           <article class="skill-categories">
             <div class="skill-img">
               <img src="Imgs/icon-frameworks.svg" alt="" />
@@ -224,7 +242,7 @@
             </ul>
           </article>
         </li>
-        <li>
+        <li class="skill-cards">
           <article class="skill-categories">
             <div class="skill-img">
               <img src="Imgs/icon-skills.svg" alt="" />
@@ -266,6 +284,12 @@
                 required
               />
             </li>
+            <li class="input-full-name">
+                        <input type="text" name="first_name" id="first_name" maxlength="30" placeholder="First name"
+                            required>
+                        <input type="text" name="last_name" id="last_name" maxlength="30" placeholder="Last name"
+                            required>
+                    </li>
             <li class="input-email">
               <input
                 type="email"
@@ -292,9 +316,11 @@
           </ul>
         </form>
       </div>
+      <div class="hidden-email">
       <a href="www.gmail.com" class="link-email"
         >mahadihasanrifat86@gmail.com</a
       >
+      </div>
       <div class="footer-socialmedia">
         <ul class="social-media">
           <li>
