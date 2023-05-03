@@ -474,7 +474,6 @@ footer::after {
   padding-bottom: 2%;
 }
 
-
 @media (min-width: 768px) {
   html,
   body {
@@ -487,6 +486,7 @@ footer::after {
   .menu-item a {
     text-decoration: none;
   }
+
   .menu-bar {
     display: none;
   }
@@ -506,6 +506,7 @@ footer::after {
     width: 100%;
     color: #42526e;
   }
+
   .header-nav-desktop ul {
     display: flex;
     flex-direction: row;
@@ -518,14 +519,16 @@ footer::after {
     text-decoration: none;
     padding: 0;
     margin: 1em;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
-    color: #42526e;
     cursor: pointer;
     text-align: center;
     line-height: 4rem;
   }
 
+  .menu-item a {
+    color: #42526e;
+  }
   .heading {
     padding-top: 3em;
   }
@@ -542,15 +545,18 @@ footer::after {
   .flex-container {
     padding-top: 7%;
   }
-  .first-section .flex-container h1 {
+
+  .first-section .flex-container {
     display: flex;
     justify-content: center;
+    margin-top: -15%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 60px;
     text-align: center;
+
     letter-spacing: 0.37px;
     flex: none;
     order: 0;
@@ -558,7 +564,8 @@ footer::after {
   }
 
   .first-section p {
-    width: 50%;
+    width: 85%;
+    margin-bottom: 10%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -570,12 +577,14 @@ footer::after {
     order: 1;
     flex-grow: 0;
   }
+
   .social-media {
     padding-bottom: 10%;
     flex: none;
     order: 2;
     flex-grow: 0;
   }
+
   .disabled-button {
     flex: none;
     order: 3;
@@ -590,19 +599,21 @@ footer::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 100%;
     justify-content: center;
     margin-top: 6%;
   }
+
   .jobs {
     width: calc(
-      (100% / 3) - 10px
+      (100% / 2) - 10px
     ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+
     margin: auto; /* Set the width of each item to one-third of the container minus 10px for the margins */
   }
 
   .btn-showup:hover {
-    box-shadow: 0px 8px 16px 0px #36b37f3d;
+    box-shadow: 0 8px 16px 0 #36b37f3d;
     background: #36b37f;
     border-radius: 4px;
   }
@@ -613,13 +624,17 @@ footer::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6%;
   }
 
   .skill-cards {
-    width: calc((100% / 3) - 10px);
-    margin: 5px;
+    margin-top: 6%;
+    width: calc((100% / 2) - 10px);
   }
+
+  /* Footer part desktop CSS styling */
 
   footer::after {
     display: none;
@@ -638,12 +653,14 @@ footer::after {
     background-repeat: no-repeat;
     background-position: 0% 90%, 30% 90%, 100% 90%;
   }
+
   .footer-form {
-    width: 100%
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
+
   .footer-form .foot-title {
     display: flex;
     flex-direction: row;
@@ -653,15 +670,16 @@ footer::after {
     margin-bottom: 8%;
   }
 
-  .input-name{
+  .input-name {
     display: none;
   }
 
-   .input-full-name {
+  .input-full-name {
     display: flex;
     justify-content: space-between;
     padding: 0;
   }
+
   .input-full-name,
   .input-email,
   textarea {
@@ -676,12 +694,13 @@ footer::after {
   .footer-container > .social-media {
     margin-top: 18em;
   }
-  
+
   .input-full-name input {
     max-width: 48%;
     min-width: 48%;
     width: inherit;
   }
+
   .submit-button {
     align-self: flex-start;
   }
