@@ -550,7 +550,7 @@ footer::after {
   .first-section .flex-container {
     display: flex;
     justify-content: center;
-    margin-top: -15%;
+
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -564,7 +564,7 @@ footer::after {
   }
 
   .first-section p {
-    width: 85%;
+    width: 65%;
     margin-bottom: 10%;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -605,10 +605,9 @@ footer::after {
   }
 
   .jobs {
-    width:
-      calc(
-        (100% / 2) - 10px
-      ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+    width: calc(
+      (100% / 3) - 10px
+    ); /* Set the width of each item to one-third of the container minus 10px for the margins */
 
     margin: auto; /* Set the width of each item to one-third of the container minus 10px for the margins */
   }
@@ -625,14 +624,15 @@ footer::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
     margin-top: 6%;
   }
 
   .skill-cards {
-    margin-top: 6%;
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 3) - 10px);
+    margin: 5px;
   }
 
   /* Footer part desktop CSS styling */
@@ -648,8 +648,7 @@ footer::after {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image:
-      url(Imgs/illustration-1-contact-form-desktop.svg),
+    background-image: url(Imgs/illustration-1-contact-form-desktop.svg),
       url(Imgs/illustration-2-contact-form-desktop.svg),
       url(Imgs/illustratoin-3-contact-form-desktop.svg);
     background-repeat: no-repeat;
