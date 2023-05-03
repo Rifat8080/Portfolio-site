@@ -605,9 +605,10 @@ footer::after {
   }
 
   .jobs {
-    width: calc(
-      (100% / 2) - 10px
-    ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+    width:
+      calc(
+        (100% / 2) - 10px
+      ); /* Set the width of each item to one-third of the container minus 10px for the margins */
 
     margin: auto; /* Set the width of each item to one-third of the container minus 10px for the margins */
   }
@@ -647,7 +648,8 @@ footer::after {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image: url(Imgs/illustration-1-contact-form-desktop.svg),
+    background-image:
+      url(Imgs/illustration-1-contact-form-desktop.svg),
       url(Imgs/illustration-2-contact-form-desktop.svg),
       url(Imgs/illustratoin-3-contact-form-desktop.svg);
     background-repeat: no-repeat;
