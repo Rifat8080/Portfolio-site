@@ -491,6 +491,10 @@ footer::after {
     margin-top: 2%;
     margin-left: 70%;
   }
+
+  .bottom-line {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -719,8 +723,9 @@ footer::after {
     height: 114px;
   }
 
-  .footer-container > .social-media {
-    margin-top: 18em;
+  .social-media {
+    margin: 20%;
+    padding: 20%;
   }
 
   .input-full-name .full-name-bar {
