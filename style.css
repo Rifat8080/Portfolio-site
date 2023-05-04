@@ -159,10 +159,13 @@ button {
   box-sizing: border-box;
 }
 
-.box-img img {
+.box-img {
   width: 100%;
   min-height: 250px;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .box-tags,
@@ -627,10 +630,9 @@ footer::after {
   }
 
   .jobs {
-    width:
-      calc(
-        (100% / 3) - 10px
-      ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+    width: calc(
+      (100% / 3) - 10px
+    ); /* Set the width of each item to one-third of the container minus 10px for the margins */
 
     margin: 5px; /* Set the width of each item to one-third of the container minus 10px for the margins */
   }
@@ -675,8 +677,7 @@ footer::after {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image:
-      url(Imgs/illustration-1-contact-form-desktop.svg),
+    background-image: url(Imgs/illustration-1-contact-form-desktop.svg),
       url(Imgs/illustration-2-contact-form-desktop.svg),
       url(Imgs/illustratoin-3-contact-form-desktop.svg);
     background-repeat: no-repeat;
