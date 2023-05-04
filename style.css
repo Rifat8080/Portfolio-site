@@ -474,6 +474,25 @@ footer::after {
   padding-bottom: 2%;
 }
 
+@media (min-width: 365px) {
+  .menu-bar-close {
+    display: none;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .input-full-name {
+    display: none;
+  }
+
+  .menu-bar {
+    margin-top: 2%;
+    margin-left: 70%;
+  }
+}
+
 @media (min-width: 768px) {
   html,
   body {
@@ -604,11 +623,16 @@ footer::after {
   }
 
   .jobs {
-    width: calc(
-      (100% / 3) - 10px
-    ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+    width:
+      calc(
+        (100% / 3) - 10px
+      ); /* Set the width of each item to one-third of the container minus 10px for the margins */
 
-    margin: auto; /* Set the width of each item to one-third of the container minus 10px for the margins */
+    margin: 5px; /* Set the width of each item to one-third of the container minus 10px for the margins */
+  }
+
+  .recent-job::after {
+    content: none;
   }
 
   .btn-showup:hover {
@@ -623,13 +647,14 @@ footer::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
     margin-top: 6%;
   }
 
   .skill-cards {
-    width: calc((100% / 3) - 10px);
+    width: 300px; /* set a fixed width */
     margin: 5px;
   }
 
@@ -646,18 +671,21 @@ footer::after {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image: url(Imgs/illustration-1-contact-form-desktop.svg),
+    background-image:
+      url(Imgs/illustration-1-contact-form-desktop.svg),
       url(Imgs/illustration-2-contact-form-desktop.svg),
       url(Imgs/illustratoin-3-contact-form-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0% 90%, 30% 90%, 100% 90%;
+    padding-left: 7%;
+    padding-right: 13%;
   }
 
   .footer-form {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-left: 3%;
   }
 
   .footer-form .foot-title {
@@ -667,6 +695,7 @@ footer::after {
     text-align: left;
     margin-left: 7%;
     margin-bottom: 8%;
+    padding-right: 3%;
   }
 
   .input-name {
@@ -683,7 +712,7 @@ footer::after {
   .input-email,
   textarea {
     min-width: 327px;
-    width: calc(95vw - 684px);
+    width: 800px;
   }
 
   textarea {
@@ -694,32 +723,17 @@ footer::after {
     margin-top: 18em;
   }
 
-  .input-full-name input {
+  .input-full-name .full-name-bar {
     max-width: 48%;
     min-width: 48%;
     width: inherit;
   }
 
+  .input-email input {
+    width: 800px;
+  }
+
   .submit-button {
     align-self: flex-start;
-  }
-}
-
-@media (min-width: 365px) {
-  .menu-bar-close {
-    display: none;
-  }
-
-  .menu-list {
-    display: none;
-  }
-
-  .input-full-name {
-    display: none;
-  }
-
-  .menu-bar {
-    margin-top: 2%;
-    margin-left: 70%;
   }
 }
