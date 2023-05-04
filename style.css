@@ -170,6 +170,10 @@ button {
   box-shadow: var(--shadow);
 }
 
+.box-img:hover {
+  transform: scale(1.2);
+}
+
 .box-img {
   overflow: hidden;
   box-sizing: border-box;
