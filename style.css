@@ -102,6 +102,22 @@ button {
   width: 170px;
 }
 
+.disabled-button {
+  display: flex;
+  justify-content: center;
+}
+
+.disabled-link img {
+  animation: 3s ease move-link forwards;
+}
+
+@keyframes move-link {
+  from {
+    transform: translateY(180px);
+  }  to {
+    transform: translateY(0);
+  }
+}
 /* class box-job, box-img, box-title, box-tags, btn-showup  */
 
 /* Styling My recent work section */
