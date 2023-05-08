@@ -46,7 +46,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link] Coming soon!
+- https://rifat8080.github.io/Portfolio-site/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
