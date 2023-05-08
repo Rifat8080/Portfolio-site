@@ -102,6 +102,25 @@ button {
   width: 170px;
 }
 
+.disabled-button {
+  display: flex;
+  justify-content: center;
+}
+
+.disabled-link img {
+  animation: 3s ease move-link forwards;
+}
+
+@keyframes move-link {
+  from {
+    transform: translateY(180px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* class box-job, box-img, box-title, box-tags, btn-showup  */
 
 /* Styling My recent work section */
@@ -157,12 +176,16 @@ button {
 .box-img {
   overflow: hidden;
   box-sizing: border-box;
-}
-
-.box-img img {
   width: 100%;
   min-height: 250px;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.box-img:hover {
+  transform: scale(1.2);
 }
 
 .box-tags,
