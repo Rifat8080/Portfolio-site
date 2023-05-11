@@ -48,6 +48,10 @@
 
 - https://rifat8080.github.io/Portfolio-site/
 
+## 🚀 Video Explanation <a name="video-explanation"></a>
+
+-https://www.loom.com/share/f4f4f704921f4dd19beac7d538011fc3
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
