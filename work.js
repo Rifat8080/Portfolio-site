@@ -37,12 +37,12 @@ document.getElementById('popbtn6').addEventListener('click', () => {
 
 // Add event listeners to the close buttons in the modals
 
-const closeButtons = document.getElementsByClassName('close');
-for (let i = 0; i < closeButtons.length; i++) {
-  closeButtons[i].addEventListener('click', () => {
-    closeModal(this.closest('.modal1').id);
+const closeButtons = Array.from(document.getElementsByClassName('close'));
+closeButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    closeModal(button.closest('.modal1').id);
   });
-}
+});
 
 // Close the modal when the user clicks outside the modal content
 window.addEventListener('click', (event) => {
