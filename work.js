@@ -10,6 +10,15 @@ function closeModal(modalId) {
   modal.style.display = 'none';
 }
 
+// Add event listeners to the close buttons in the modals
+
+var closeButtons = document.getElementsByClassName('close');
+for (var i = 0; i < closeButtons.length; i++) {
+  closeButtons[i].addEventListener('click', function () {
+    closeModal(this.closest('.modal1').id);
+  });
+}
+
 // Add event listeners to the buttons that open the modals
 document.getElementById('popbtn1').addEventListener('click', function () {
   openModal('myModal1');
@@ -34,14 +43,6 @@ document.getElementById('popbtn5').addEventListener('click', function () {
 document.getElementById('popbtn6').addEventListener('click', function () {
   openModal('myModal6');
 });
-
-// Add event listeners to the close buttons in the modals
-var closeButtons = document.getElementsByClassName('close');
-for (var i = 0; i < closeButtons.length; i++) {
-  closeButtons[i].addEventListener('click', function () {
-    closeModal(this.closest('.modal1').id);
-  });
-}
 
 // Close the modal when the user clicks outside the modal content
 window.addEventListener('click', function (event) {
