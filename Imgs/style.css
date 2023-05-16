@@ -753,3 +753,8 @@ footer::after {
     align-self: flex-start;
   }
 }
+
+/* Pop-menu  design */
+.box-tags-popup li {
+  list-style: none;
+}
