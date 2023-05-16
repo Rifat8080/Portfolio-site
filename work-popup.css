@@ -162,3 +162,58 @@ h2 {
   line-height: 30px;
   color: #344563;
 }
+
+@media (min-width: 365px) {
+  .modal-image {
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+  }
+  .box-tags-popup {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0%;
+    display: flex;
+  }
+  .close {
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6%;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-btn-template {
+    display: none;
+  }
+  .modal-btn-template-mob {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .modal-btn-template-mob a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    align-items: center;
+    flex-basis: 40%; /* Adjust the value as needed */
+    margin-bottom: 10px; /* Adjust the spacing between buttons */
+    text-decoration: none;
+  }
+}
