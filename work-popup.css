@@ -121,7 +121,6 @@
   justify-content: flex-start;
   list-style: none;
   padding: 0%;
-  display: flex;
 }
 
 .box-tags-popup li {
@@ -172,13 +171,14 @@ h2 {
     max-height: 50vh;
     object-fit: cover;
   }
+
   .box-tags-popup {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0%;
-    display: flex;
   }
+
   .close {
     background: #ebecf0;
     mix-blend-mode: multiply;
@@ -197,20 +197,22 @@ h2 {
     text-decoration: none;
     cursor: pointer;
   }
+
   .modal-btn-template {
     display: none;
   }
+
   .modal-btn-template-mob {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .modal-btn-template-mob a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
     align-items: center;
     flex-basis: 40%; /* Adjust the value as needed */
     margin-bottom: 10px; /* Adjust the spacing between buttons */
