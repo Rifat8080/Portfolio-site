@@ -1,19 +1,19 @@
 // Function to open a modal
 function openModal(modalId) {
-  var modal = document.getElementById(modalId);
+  let modal = document.getElementById(modalId);
   modal.style.display = 'block';
 }
 
 // Function to close a modal
 function closeModal(modalId) {
-  var modal = document.getElementById(modalId);
+  let modal = document.getElementById(modalId);
   modal.style.display = 'none';
 }
 
 // Add event listeners to the close buttons in the modals
 
-var closeButtons = document.getElementsByClassName('close');
-for (var i = 0; i < closeButtons.length; i++) {
+let closeButtons = document.getElementsByClassName('close');
+for (let i = 0; i < closeButtons.length; i++) {
   closeButtons[i].addEventListener('click', function () {
     closeModal(this.closest('.modal1').id);
   });
