@@ -119,7 +119,7 @@
 .box-tags-popup {
   display: flex;
   justify-content: flex-start;
-  ist-style: none;
+  list-style: none;
   padding: 0%;
   display: flex;
 }
