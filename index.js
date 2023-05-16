@@ -4,6 +4,20 @@ const mobileMenu = document.querySelector('.menu-list-mobile');
 const closeButton = document.querySelector('.menu-bar-close');
 const menuItems = document.querySelectorAll('.menu-item-mobile');
 const overlay = document.querySelector('.overlay');
+function openMobileMenu() {
+  mobileMenu.style.display = 'block';
+  closeButton.style.display = 'block';
+  hamburgerButton.style.display = 'none';
+  overlay.style.display = 'block'; // Show the overlay
+}
+
+function closeMobileMenu() {
+  mobileMenu.style.display = 'none';
+  closeButton.style.display = 'none';
+  hamburgerButton.style.display = 'block';
+  overlay.style.display = 'none'; // Hide the overlay
+}
+
 mobileMenu.style.display = 'none';
 closeButton.style.display = 'none';
 overlay.style.display = 'none';
@@ -34,17 +48,3 @@ menuItems.forEach((menuItem) => {
     closeMobileMenu(); // Close the mobile menu
   });
 });
-
-function openMobileMenu() {
-  mobileMenu.style.display = 'block';
-  closeButton.style.display = 'block';
-  hamburgerButton.style.display = 'none';
-  overlay.style.display = 'block'; // Show the overlay
-}
-
-function closeMobileMenu() {
-  mobileMenu.style.display = 'none';
-  closeButton.style.display = 'none';
-  hamburgerButton.style.display = 'block';
-  overlay.style.display = 'none'; // Hide the overlay
-}
