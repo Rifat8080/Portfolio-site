@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 html,
 body {
@@ -15,12 +15,12 @@ body {
 body {
   display: block;
   background: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Decoration styling */
 h1 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -65,7 +65,7 @@ button {
 
 .logo {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -122,7 +122,7 @@ button {
 }
 
 .recent-job::after {
-  content: "";
+  content: '';
   height: 4px;
   width: 50px;
   margin: 0 auto;
@@ -273,7 +273,7 @@ button {
   background: var(--color-primary);
   font-weight: 500;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
@@ -385,7 +385,7 @@ form {
 }
 
 .foot-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -441,12 +441,20 @@ textarea {
 textarea {
   border-color: #60c095;
   color: #42526e;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+}
+
+#error-message {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 input:valid,
@@ -456,7 +464,7 @@ textarea:valid {
 }
 
 footer::after {
-  content: "";
+  content: '';
   height: 4px;
   width: 150px;
   margin: 0 auto;
@@ -525,7 +533,7 @@ footer::after {
 
   .menu-list-mobile .menu-item-mobile a {
     color: #3a4a42;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -551,6 +559,14 @@ footer::after {
 
   .bottom-line {
     display: none;
+  }
+
+  #error-message {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 14px;
+    margin-top: 5px;
   }
 }
 
@@ -632,7 +648,7 @@ footer::after {
   .first-section .flex-container {
     display: flex;
     justify-content: center;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -647,7 +663,7 @@ footer::after {
   .first-section p {
     width: 65%;
     margin-bottom: 5%;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -686,10 +702,9 @@ footer::after {
   }
 
   .jobs {
-    width:
-      calc(
-        (100% / 3) - 10px
-      ); /* Set the width of each item to one-third of the container minus 10px for the margins */
+    width: calc(
+      (100% / 3) - 10px
+    ); /* Set the width of each item to one-third of the container minus 10px for the margins */
 
     margin: 5px; /* Set the width of each item to one-third of the container minus 10px for the margins */
   }
@@ -734,8 +749,7 @@ footer::after {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image:
-      url(Imgs/illustration-1-contact-form-desktop.svg),
+    background-image: url(Imgs/illustration-1-contact-form-desktop.svg),
       url(Imgs/illustration-2-contact-form-desktop.svg),
       url(Imgs/illustratoin-3-contact-form-desktop.svg);
     background-repeat: no-repeat;
@@ -794,5 +808,13 @@ footer::after {
 
   .submit-button {
     align-self: flex-start;
+  }
+
+  #error-message {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 14px;
+    margin-top: 5px;
   }
 }
