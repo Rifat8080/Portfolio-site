@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 html,
 body {
@@ -15,12 +15,12 @@ body {
 body {
   display: block;
   background: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Decoration styling */
 h1 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -65,7 +65,7 @@ button {
 
 .logo {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -122,7 +122,7 @@ button {
 }
 
 .recent-job::after {
-  content: "";
+  content: '';
   height: 4px;
   width: 50px;
   margin: 0 auto;
@@ -273,7 +273,7 @@ button {
   background: var(--color-primary);
   font-weight: 500;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
@@ -385,7 +385,7 @@ form {
 }
 
 .foot-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -441,7 +441,7 @@ textarea {
 textarea {
   border-color: #60c095;
   color: #42526e;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -456,7 +456,7 @@ textarea:valid {
 }
 
 footer::after {
-  content: "";
+  content: '';
   height: 4px;
   width: 150px;
   margin: 0 auto;
@@ -477,6 +477,63 @@ footer::after {
 @media (min-width: 365px) {
   .menu-bar-close {
     display: none;
+    z-index: 2;
+    top: 3%;
+    left: 80%;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10px;
+
+    /* Theme 2 / Neutral 11 */
+
+    background: #fff;
+    mix-blend-mode: normal;
+
+    /* Base/ Soft */
+
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 40px;
+  }
+
+  .menu-list-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+  }
+
+  .menu-item-mobile {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    line-height: 4rem;
+  }
+
+  .menu-list-mobile .menu-item-mobile a {
+    color: #3a4a42;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .desktop-header-nav {
+    display: none;
   }
 
   .menu-list {
@@ -487,7 +544,7 @@ footer::after {
     display: none;
   }
 
-  .menu-bar {
+  .menu-bar-mobile {
     margin-top: 2%;
     margin-left: 70%;
   }
@@ -504,25 +561,27 @@ footer::after {
     margin: 0;
   }
 
+  .overlay {
+    display: none;
+  }
+
   /* First Section and Nav bar work */
+  .header-nav-mobile {
+    display: none;
+  }
+
+  .desktop-header-nav {
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .menu-item a {
     text-decoration: none;
   }
 
-  .menu-bar {
-    display: none;
-  }
-
-  .menu-bar-close {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .header-nav-mobile-hidden {
+  .header-nav-d {
     position: fixed;
     top: 0;
     left: 0;
@@ -573,7 +632,7 @@ footer::after {
   .first-section .flex-container {
     display: flex;
     justify-content: center;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -588,7 +647,7 @@ footer::after {
   .first-section p {
     width: 65%;
     margin-bottom: 5%;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
