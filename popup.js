@@ -147,11 +147,11 @@ for (let i = 0; i < showButton.length; i += 1) {
   const modalCombineDesktop = popUp.querySelector('.modal-combine-desktop');
   modalCombineDesktop.style.display = 'none';
 }
- if (window.matchMedia('(min-width:768px)').matches) {
-  const modalCombineDesktop = popUp.querySelector('.modal-combine-desktop');
-  modalCombineDesktop.style.display = 'block';
+if (window.matchMedia('(min-width:768px)').matches) {
+const modalCombineDesktop = popUp.querySelector('.modal-combine-desktop');
+modalCombineDesktop.style.display = 'block';
 }
-    body.appendChild(popUp);
+body.appendChild(popUp);
   });
 }
 body.addEventListener('click', () => {
