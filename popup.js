@@ -11,7 +11,6 @@ const projectInfo = [
     content: 'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
     tools: ['HTML', 'CSS', 'JavaScript'],
   },
-
   {
     id: 1,
     header: 'Multi-Post Stories',
@@ -19,7 +18,6 @@ const projectInfo = [
     content: 'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
     tools: ['HTML', 'CSS', 'JavaScript'],
   },
-
   {
     id: 2,
     header: 'Multi-Post Stories Gain+Glory',
@@ -27,7 +25,6 @@ const projectInfo = [
     content: 'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
     tools: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
-
   {
     id: 3,
     header: 'Multi-Post Stories',
@@ -35,7 +32,6 @@ const projectInfo = [
     content: 'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
     tools: ['HTML', 'CSS', 'JavaScript'],
   },
-
    {
     id: 4,
     header: 'Multi-Post Stories',
@@ -151,15 +147,13 @@ for (let i = 0; i < showButton.length; i += 1) {
   const modalCombineDesktop = popUp.querySelector('.modal-combine-desktop');
   modalCombineDesktop.style.display = 'none';
 }
-
-     if (window.matchMedia('(min-width:768px)').matches) {
+ if (window.matchMedia('(min-width:768px)').matches) {
   const modalCombineDesktop = popUp.querySelector('.modal-combine-desktop');
   modalCombineDesktop.style.display = 'block';
 }
     body.appendChild(popUp);
   });
 }
-
 body.addEventListener('click', () => {
   body.style.display = 'none';
   popUp.remove();
