@@ -134,12 +134,14 @@ for (let i = 0; i < showButton.length; i += 1) {
                       See live
                       <img class="svg" src="Imgs/see live icon.svg" alt="Live Icon" />
                     </button>
+                    <a href="https://github.com/Rifat8080/Portfolio-site">
                     <button class="modal-button source">
                       See source
                       <span>
                       <img class="svg" src="Imgs/Vector.svg" alt="Github Icon" />
                       </span>
                       </button>
+                      </a>
                    </div>
               </div>
             </div>
