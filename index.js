@@ -4,6 +4,7 @@ const mobileMenu = document.querySelector('.menu-list-mobile');
 const closeButton = document.querySelector('.menu-bar-close');
 const menuItems = document.querySelectorAll('.menu-item-mobile');
 const overlay = document.querySelector('.overlay');
+
 function openMobileMenu() {
   mobileMenu.style.display = 'block';
   closeButton.style.display = 'block';
