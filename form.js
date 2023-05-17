@@ -6,8 +6,7 @@ const validateForm = (event) => {
   const email = emailInput.value.trim();
   const lowerCaseEmail = email.toLowerCase();
   if (email !== lowerCaseEmail) {
-    document.getElementById('error-message').textContent =
-      'Please enter a lowercase email address.';
+    document.getElementById('error-message').textContent = 'Please enter a lowercase email address.';
     return; // Stop further processing
   }
 
