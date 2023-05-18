@@ -19,7 +19,6 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [Portfolio site] <a name="about-project"></a>
 
@@ -31,7 +30,7 @@
 
 ## 🛠 Built With HTML And CSS <a name="built-with"></a>
 
-<!-- Features -->
+
 
 ### Key Features <a name="key-features"></a>
 
@@ -42,7 +41,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -50,7 +49,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -80,7 +79,7 @@ git clone https://github.com/Rifat8080/Portfolio-site
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -92,7 +91,7 @@ git clone https://github.com/Rifat8080/Portfolio-site
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -102,7 +101,7 @@ git clone https://github.com/Rifat8080/Portfolio-site
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -112,7 +111,7 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -120,7 +119,7 @@ If you like this project let us know with a DM!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -129,9 +128,7 @@ I would like to thank you all for checking out my trial project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
