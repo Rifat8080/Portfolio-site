@@ -292,53 +292,27 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h1>
-        <form
-          action="https://formspree.io/f/xbjewgnl"
-          method="post"
-          class="contact-form-input"
-        >
-          <ul class="form-input">
-            <li class="input-name">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                maxlength="30"
-                placeholder="Full name"
-                required
-              />
-            </li>
-            <li class="input-full-name">
-                        <input type="text" class="full-name-bar" name="first_name" id="first_name" maxlength="30" placeholder="First name"
-                            required>
-                        <input type="text" class="full-name-bar" name="last_name" id="last_name" maxlength="30" placeholder="Last name"
-                            required>
-                    </li>
-            <li class="input-email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email address"
-                required
-              />
-            </li>
-            <li class="input-text">
-              <textarea
-                name="text_area"
-                id="text_area"
-                cols="30"
-                rows="10"
-                maxlength="500"
-                placeholder="Hey I’d like to connect to..."
-                required
-              ></textarea>
-            </li>
-            <li class="submit-button">
-              <button type="submit">Get in touch</button>
-            </li>
-          </ul>
-        </form>
+       <form action="https://formspree.io/f/xbjewgnl" method="post" class="contact-form-input" id="form_id" onsubmit="validateForm(event)">
+  <ul class="form-input">
+    <li class="input-name">
+      <input type="text" name="name"  class="name" id="name" maxlength="30" placeholder="Full name" required />
+    </li>
+    <li class="input-full-name">
+      <input type="text" class="full-name-bar" class="name" name="first_name" id="first_name" maxlength="30" placeholder="First name" required>
+      <input type="text" class="full-name-bar" class="name" name="last_name" id="last_name" maxlength="30" placeholder="Last name" required>
+    </li>
+    <li class="input-email">
+      <input type="email" name="email" id="email" placeholder="Email address" required />
+    </li>
+    <li class="input-text">
+      <textarea name="text_area" class="text" id="text_area" cols="30" rows="10" maxlength="500" placeholder="Hey I’d like to connect to..." required></textarea>
+    </li>
+    <li class="submit-button">
+      <button type="submit">Get in touch</button>
+      <span id="error-message" class="error-message"></span>
+    </li>
+  </ul>
+</form>
       </div>
       <div class="hidden-email">
       <a href="www.gmail.com" class="link-email"
@@ -383,5 +357,6 @@
     </footer>
     <script src="index.js"></script>
     <script src="popup.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
