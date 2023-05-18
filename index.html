@@ -193,7 +193,7 @@
 
     <!-- Contact form and Footer Section -->
 
-    <section class="footer-container" id="footer-container-id">
+ <section class="footer-container" id="footer-container-id">
       <div class="footer-form">
         <h1 class="foot-title">
           I'm always interested in hearing about new projects, so if you'd like
@@ -202,17 +202,17 @@
        <form action="https://formspree.io/f/xbjewgnl" method="post" class="contact-form-input" id="form_id" onsubmit="validateForm(event)">
   <ul class="form-input">
     <li class="input-name">
-      <input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required />
+      <input type="text" name="name"  class="name" id="name" maxlength="30" placeholder="Full name" required />
     </li>
     <li class="input-full-name">
-      <input type="text" class="full-name-bar" name="first_name" id="first_name" maxlength="30" placeholder="First name" required>
-      <input type="text" class="full-name-bar" name="last_name" id="last_name" maxlength="30" placeholder="Last name" required>
+      <input type="text" class="full-name-bar" class="name" name="first_name" id="first_name" maxlength="30" placeholder="First name" required>
+      <input type="text" class="full-name-bar" class="name" name="last_name" id="last_name" maxlength="30" placeholder="Last name" required>
     </li>
     <li class="input-email">
       <input type="email" name="email" id="email" placeholder="Email address" required />
     </li>
     <li class="input-text">
-      <textarea name="text_area" id="text_area" cols="30" rows="10" maxlength="500" placeholder="Hey I’d like to connect to..." required></textarea>
+      <textarea name="text_area" class="text" id="text_area" cols="30" rows="10" maxlength="500" placeholder="Hey I’d like to connect to..." required></textarea>
     </li>
     <li class="submit-button">
       <button type="submit">Get in touch</button>
