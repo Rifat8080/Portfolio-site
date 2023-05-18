@@ -191,7 +191,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h1>
-       <form action="https://formspree.io/f/xbjewgnl" method="post" class="contact-form-input" onsubmit="validateForm(event)">
+       <form action="https://formspree.io/f/xbjewgnl" method="post" class="contact-form-input" id="form_id" onsubmit="validateForm(event)">
   <ul class="form-input">
     <li class="input-name">
       <input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required />
@@ -208,8 +208,8 @@
     </li>
     <li class="submit-button">
       <button type="submit">Get in touch</button>
-      <span id="error-message" class="error-message"></span>
     </li>
+    <span id="error-message" class="error-message"></span>
   </ul>
 </form>
       </div>
@@ -255,5 +255,6 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
