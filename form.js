@@ -1,16 +1,10 @@
-const validateForm = (event) => {
-  event.preventDefault(); // Prevent form submission for now
+const smallElement = document.getElementById('error');
+const emailElement = document.getElementById('email_id');
+const formElement = document.getElementById('form_id');
 
-  // Perform email validation
-  const emailInput = document.getElementById('email');
-  const email = emailInput.value.trim();
-  const lowerCaseEmail = email.toLowerCase();
-  if (email !== lowerCaseEmail) {
-    document.getElementById('error-message').textContent = 'Please enter a lowercase email address.';
-    return; // Stop further processing
+formElement.addEventListener('submit', (event) => {
+  if (emailElement.value.toLowerCase() !== emailElement.value) {
+    event.preventDefault();
+    smallElement.innerText = 'please type all email charaters in lowercase. form was not submitted';
   }
-
-  // Clear error message and submit the form if validation passes
-  document.getElementById('error-message').textContent = '';
-  event.target.submit();
-};
+});
