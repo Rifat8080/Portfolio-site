@@ -781,7 +781,7 @@ footer::after {
     padding-right: 3%;
   }
 
-  
+
   .input-email,
   textarea {
     min-width: 327px;
@@ -791,8 +791,6 @@ footer::after {
   textarea {
     height: 114px;
   }
-
-
 
   .input-email input {
     width: 800px;
