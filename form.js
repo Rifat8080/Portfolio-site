@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('email').value = email || '';
     document.getElementById('text_area').value = textArea || '';
   }
- });
+});
 // Js validation
 const smallElement = document.getElementById('error-message');
 const emailElement = document.getElementById('email');
