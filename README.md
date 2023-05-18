@@ -60,8 +60,6 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-> You will need to clone the repo to your local machine then use it on vs code or atom etc.
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -118,8 +116,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project let us know with a DM!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,8 +123,6 @@ If you like this project let us know with a DM!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank you all for checking out my trial project!
 
