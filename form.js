@@ -1,14 +1,34 @@
-// Load form data from local storage on page load
-window.addEventListener('DOMContentLoaded', () => {
-  const formData = localStorage.getItem('form_data');
-  if (formData) {
-    const {
-      name, firstName, lastName, email, textArea,
-    } = JSON.parse(formData);
-    document.getElementById('name').value = name || '';
-    document.getElementById('first_name').value = firstName || '';
-    document.getElementById('last_name').value = lastName || '';
-    document.getElementById('email').value = email || '';
-    document.getElementById('text_area').value = textArea || '';
-  }
+// Get form element and submit button
+const form = document.getElementById('form');
+const submitButton = document.getElementById('contact-submit');
+
+// Add event listener to the form submission
+form.addEventListener('submit', function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  // Get input values
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const textArea = document.getElementById('text_area');
+
+  // Store the form data in local storage
+  localStorage.setItem('name', nameInput.value);
+  localStorage.setItem('email', emailInput.value);
+  localStorage.setItem('text', textArea.value);
+
+  // Submit the form
+  form.submit();
+});
+
+// Load stored data on page load
+window.addEventListener('load', function() {
+  const storedName = localStorage.getItem('name');
+  const storedEmail = localStorage.getItem('email');
+  const storedText = localStorage.getItem('text');
+
+  // Populate form fields with stored data
+  document.getElementById('name').value = storedName;
+  document.getElementById('email').value = storedEmail;
+  document.getElementById('text_area').value = storedText;
 });
