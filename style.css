@@ -289,6 +289,7 @@ button {
   background: #36b37f;
   color: #fff;
   border-radius: 4px;
+  list-style: none;
 }
 
 .submit-button button:hover {
@@ -404,7 +405,9 @@ form {
 }
 
 .input-name {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .footer-form {
@@ -447,6 +450,15 @@ textarea {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  list-style: none;
+}
+
+#error-message {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 input:valid,
@@ -551,6 +563,14 @@ footer::after {
 
   .bottom-line {
     display: none;
+  }
+
+  #error-message {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 14px;
+    margin-top: 5px;
   }
 }
 
@@ -761,17 +781,6 @@ footer::after {
     padding-right: 3%;
   }
 
-  .input-name {
-    display: none;
-  }
-
-  .input-full-name {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .input-full-name,
   .input-email,
   textarea {
     min-width: 327px;
@@ -782,17 +791,19 @@ footer::after {
     height: 114px;
   }
 
-  .input-full-name .full-name-bar {
-    max-width: 48%;
-    min-width: 48%;
-    width: inherit;
-  }
-
   .input-email input {
     width: 800px;
   }
 
   .submit-button {
     align-self: flex-start;
+  }
+
+  #error-message {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 14px;
+    margin-top: 5px;
   }
 }
