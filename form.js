@@ -1,31 +1,36 @@
-// Load form data from local storage on page load
-window.addEventListener('DOMContentLoaded', () => {
-    const formData = localStorage.getItem('form_data');
-    if (formData) {
-      const { name, first_name, last_name, email, text_area } =
-        JSON.parse(formData);
-      document.getElementById('name').value = name || '';
-      document.getElementById('first_name').value = first_name || '';
-      document.getElementById('last_name').value = last_name || '';
-      document.getElementById('email').value = email || '';
-      document.getElementById('text_area').value = text_area || '';
-    }
-  });
-  
-const validateForm = (event) => {
-    event.preventDefault(); // Prevent form submission for now
-  
-    // Perform email validation
-    const emailInput = document.getElementById('email');
-    const email = emailInput.value.trim();
-    const lowerCaseEmail = email.toLowerCase();
-    if (email !== lowerCaseEmail) {
-      document.getElementById('error-message').textContent =
-        'Please enter a lowercase email address.';
-      return; // Stop further processing
-    }
-  
-    // Clear error message and submit the form if validation passes
-    document.getElementById('error-message').textContent = '';
-    event.target.submit();
+// Data validation
+const smallElement = document.getElementById('error-message');
+const emailElement = document.getElementById('email');
+const formElement = document.getElementById('form_id');
+
+formElement.addEventListener('submit', (event) => {
+  if (emailElement.value.toLowerCase() !== emailElement.value) {
+    event.preventDefault();
+    smallElement.innerText = 'please type all email charaters in lowercase.';
+  }
+});
+
+// Data Local storage
+
+const nameElement = document.getElementById('name');
+const textareaElement = document.getElementById('text');
+
+formElement.addEventListener('input', () => {
+  const formData = {
+    name: nameElement.value,
+    email: emailElement.value,
+    message: textareaElement.value,
   };
+  localStorage.setItem('contactForm', JSON.stringify(formData));
+});
+
+function showData() {
+  const userData = JSON.parse(localStorage.getItem('contactForm'));
+  if (userData) {
+    nameElement.value = userData.name;
+    emailElement.value = userData.email;
+    textareaElement.value = userData.message;
+  }
+}
+showData()
+
